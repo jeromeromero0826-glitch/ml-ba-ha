@@ -190,12 +190,12 @@ body {
   flex-shrink: 0;
 }
 .sidebar-logo {
-  display: flex; flex-direction: row; align-items: center;
-  gap: 10px; text-align: left;
+  display: flex; flex-direction: column; align-items: center;
+  gap: 4px; text-align: center;
 }
-.sidebar-title-block { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+.sidebar-title-block { display: flex; flex-direction: column; align-items: center; gap: 2px; }
 
-.logo-icon { font-size: 22px; line-height: 1; flex-shrink: 0; }
+.logo-icon { font-size: 22px; line-height: 1; }
 
 .sidebar-logo h1 {
   font-size: 22px; font-weight: 800;
@@ -214,7 +214,8 @@ body {
   letter-spacing: 0.3px;
   text-transform: uppercase;
   line-height: 1.4;
-  max-width: 260px;
+  max-width: 280px;
+  text-align: center;
 }
 
 /* ── Tab nav ──────────────────────────────────────────────────────────────── */
@@ -895,12 +896,18 @@ body {
 .leaflet-control-attribution {
   display: none;
 }
+.leaflet-control-scale {
+  display: none;
+}
 .leaflet-bottom.leaflet-right .leaflet-control-scale {
   margin-bottom: 4px;
   margin-right: 6px;
 }
 @media (min-width: 640px) {
   .leaflet-control-attribution {
+    display: block;
+  }
+  .leaflet-control-scale {
     display: block;
   }
 }
