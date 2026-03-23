@@ -516,7 +516,8 @@ body {
 .hotlines-header { display: flex; align-items: center; gap: 7px; margin-bottom: 8px; }
 .hotlines-icon { font-size: 13px; line-height: 1; }
 .hotlines-title { font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; color: var(--slate-400); }
-.hotlines-grid { display: flex; flex-direction: column; gap: 4px; }
+.hotlines-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+@media (min-width: 640px) { .hotlines-grid { grid-template-columns: 1fr; } }
 .hotline-card {
   display: flex; align-items: center; gap: 10px;
   background: var(--navy-800); border: 1px solid var(--navy-700);
